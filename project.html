@@ -51,7 +51,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -86,20 +86,19 @@
     </div>
     <!-- Spinner End -->
 
-
 <!-- Topbar Start -->
-<div class="topbar container-fluid bg-dark p-0" dir="rtl">
+<div class="topbar container-fluid bg-dark py-2" dir="rtl">
     <div class="row gx-0 d-none d-lg-flex">
         <div class="col-lg-7 px-5 text-start">
             <div class="h-100 d-inline-flex align-items-center info-item">
                 <div class="icon-box">
-                    <i class="fa fa-map-marker-alt text-primary"></i>
+                    <i class="fa fa-map-marker-alt text-white"></i>
                 </div>
                 <span>الرياض، المملكة العربية السعودية</span>
             </div>
             <div class="h-100 d-inline-flex align-items-center info-item">
                 <div class="icon-box">
-                    <i class="far fa-clock text-primary"></i>
+                    <i class="far fa-clock text-white"></i>
                 </div>
                 <span>السبت - الخميس : 09.00 صباحًا - 09.00 مساءً</span>
             </div>
@@ -107,7 +106,7 @@
         <div class="col-lg-5 px-5 text-end">
             <div class="h-100 d-inline-flex align-items-center info-item">
                 <div class="icon-box">
-                    <i class="fa fa-phone-alt text-primary"></i>
+                    <i class="fa fa-phone-alt text-white"></i>
                 </div>
                 <a href="tel:0505777191" class="contact-link">0505777191</a>
             </div>
@@ -191,79 +190,127 @@
 <!-- Projects Start -->
 <div class="container-xxl py-5" dir="rtl">
     <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
             <h6 class="text-primary">مشاريعنا</h6>
-            <h1 class="mb-4">تصفح أحدث مشاريعنا في الإنشاءات والمقاولات</h1>
+            <h1 class="mb-4">تعرف على أبرز مشاريعنا في الإنشاءات والمقاولات</h1>
         </div>
-        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="col-12 text-center">
-                <ul class="list-inline mb-5" id="portfolio-flters">
-                    <li class="mx-2 active" data-filter="*">الكل</li>
-                    <li class="mx-2" data-filter=".construction">إنشاء المباني</li>
-                    <li class="mx-2" data-filter=".asphalt">أعمال الزفلتة</li>
-                    <li class="mx-2" data-filter=".fencing">تركيب الشبوك</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
-            <!-- مشروع إنشاء مباني -->
+        <div class="row g-5 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+            <!-- مشروع إنشاء مباني سكنية -->
             <div class="col-lg-4 col-md-6 portfolio-item construction">
-                <div class="portfolio-img rounded overflow-hidden position-relative">
-                    <img class="img-fluid w-100 h-100" src="./imags/build- (3).avif" alt="إنشاء مباني سكنية">
+                <div class="project-card shadow-sm rounded">
+                    <img src="./imags/build- (3).avif" class="img-fluid rounded-top" alt="إنشاء مباني سكنية">
+                    <div class="p-4">
+                        <h5 class="text-primary">خدمة عظم</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>إنشاء مباني سكنية</li>
+                            <li>إنشاء مباني تجارية</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="pt-3 text-center">
-                    <p class="text-primary mb-1">إنشاء مباني</p>
-                    <h5 class="lh-base">إنشاء مباني سكنية وتجارية بجودة عالية</h5>
+            </div>
+            <!-- مشروع خدمة سباكة -->
+            <div class="col-lg-4 col-md-6 portfolio-item plumbing">
+                <div class="project-card shadow-sm rounded">
+                    <img src="./imags/build- (6).avif" class="img-fluid rounded-top" alt="خدمة سباكة">
+                    <div class="p-4">
+                        <h5 class="text-primary">خدمة سباكة</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>تركيب أنظمة السباكة</li>
+                            <li>صيانة دورية</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- مشروع خدمة كهرباء -->
+            <div class="col-lg-4 col-md-6 portfolio-item electricity">
+                <div class="project-card shadow-sm rounded">
+                    <img src="./imags/build- (2).avif" class="img-fluid rounded-top" alt="خدمة كهرباء">
+                    <div class="p-4">
+                        <h5 class="text-primary">خدمة كهرباء</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>تركيب أنظمة كهربائية</li>
+                            <li>صيانة شاملة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- مشروع خدمات التشطيب -->
+            <div class="col-lg-4 col-md-6 portfolio-item finishing">
+                <div class="project-card shadow-sm rounded">
+                    <img src="./imags/build- (20).avif" class="img-fluid rounded-top" alt="خدمات التشطيب">
+                    <div class="p-4">
+                        <h5 class="text-primary">خدمات التشطيب</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>ترميم فلل</li>
+                            <li>ترميم مباني سكنية وتجارية</li>
+                            <li>ترميم شقق ومحلات</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- مشروع زفلتة طرق -->
             <div class="col-lg-4 col-md-6 portfolio-item asphalt">
-                <div class="portfolio-img rounded overflow-hidden position-relative">
-                    <img class="img-fluid w-100 h-100" src="./imags/build- (23).avif" alt="أعمال زفلتة طرق">
-                </div>
-                <div class="pt-3 text-center">
-                    <p class="text-primary mb-1">أعمال الزفلتة</p>
-                    <h5 class="lh-base">زفلتة ورصف الطرق بأحدث المعدات</h5>
+                <div class="project-card shadow-sm rounded">
+                    <img src="./imags/build- (23).avif" class="img-fluid rounded-top" alt="أعمال الزفلتة">
+                    <div class="p-4">
+                        <h5 class="text-primary">زفلتة الطرق</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>تمهيد ورصف الطرق</li>
+                            <li>استخدام أحدث المعدات</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- مشروع تركيب شبوك -->
             <div class="col-lg-4 col-md-6 portfolio-item fencing">
-                <div class="portfolio-img rounded overflow-hidden position-relative">
-                    <img class="img-fluid w-100 h-100" src="./imags/build- (6).avif" alt="تركيب شبوك">
-                </div>
-                <div class="pt-3 text-center">
-                    <p class="text-primary mb-1">تركيب الشبوك</p>
-                    <h5 class="lh-base">توريد وتركيب شبوك زراعية وحكومية</h5>
+                <div class="project-card shadow-sm rounded">
+                    <img src="./imags/build- (26).avif" class="img-fluid rounded-top" alt="تركيب شبوك">
+                    <div class="p-4">
+                        <h5 class="text-primary">تركيب الشبوك</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>توريد وتركيب شبوك الطرق</li>
+                            <li>تركيب شبوك زراعية ومعدنية</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- مشروع تشطيب فلل -->
-            <div class="col-lg-4 col-md-6 portfolio-item construction">
-                <div class="portfolio-img rounded overflow-hidden position-relative">
-                    <img class="img-fluid w-100 h-100" src="./imags/build- (2).avif" alt="تشطيب فلل">
-                </div>
-                <div class="pt-3 text-center">
-                    <p class="text-primary mb-1">تشطيب فلل</p>
-                    <h5 class="lh-base">تشطيب وترميم فلل بمعايير عالية</h5>
+            <!-- مشروع مضلات -->
+            <div class="col-lg-4 col-md-6 portfolio-item shading">
+                <div class="project-card shadow-sm rounded">
+                    <img src="./imags/build- (3).avif" class="img-fluid rounded-top" alt="تركيب مضلات">
+                    <div class="p-4">
+                        <h5 class="text-primary">خدمات المضلات</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>تركيب مظلات المدارس والحدائق</li>
+                            <li>تركيب سواتر وبرجولات</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- مشروع بناء هناجر -->
-            <div class="col-lg-4 col-md-6 portfolio-item construction">
-                <div class="portfolio-img rounded overflow-hidden position-relative">
-                    <img class="img-fluid w-100 h-100" src="./imags/build- (20).avif" alt="بناء هناجر">
-                </div>
-                <div class="pt-3 text-center">
-                    <p class="text-primary mb-1">بناء هناجر</p>
-                    <h5 class="lh-base">بناء هناجر ومستودعات بجودة عالية</h5>
+            <div class="col-lg-4 col-md-6 portfolio-item warehouse">
+                <div class="project-card shadow-sm rounded">
+                    <img src="./imags/build- (20).avif" class="img-fluid rounded-top" alt="بناء هناجر">
+                    <div class="p-4">
+                        <h5 class="text-primary">بناء الهناجر</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>تصميم وتنفيذ مستودعات</li>
+                            <li>بناء هناجر عالية الجودة</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- مشروع تركيب مضلات -->
-            <div class="col-lg-4 col-md-6 portfolio-item fencing">
-                <div class="portfolio-img rounded overflow-hidden position-relative">
-                    <img class="img-fluid w-100 h-100" src="./imags/build- (26).avif" alt="تركيب مضلات">
-                </div>
-                <div class="pt-3 text-center">
-                    <p class="text-primary mb-1">تركيب مضلات</p>
-                    <h5 class="lh-base">توريد وتركيب مضلات للمنازل والحدائق</h5>
+            <!-- مشروع بناء غرف جاهزة -->
+            <div class="col-lg-4 col-md-6 portfolio-item prefab">
+                <div class="project-card shadow-sm rounded">
+                    <img src="./imags/build- (2).avif" class="img-fluid rounded-top" alt="بناء غرف جاهزة">
+                    <div class="p-4">
+                        <h5 class="text-primary">بناء الغرف الجاهزة</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li>بناء غرف سندويتش بانل</li>
+                            <li>بناء غرف أسمنت بورد</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -271,77 +318,99 @@
 </div>
 <!-- Projects End -->
 
-
-<br>
-    <!-- Feature Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" dir="rtl">
-        <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <h6 class="text-primary">لماذا تختارنا!</h6>
-                        <h1 class="mb-4">حلول متكاملة للمقاولات والإنشاءات</h1>
-                        <p class="mb-4 pb-2">نحن في شركة كرم الطرق للمقاولات نقدم خدمات متكاملة في مجال الإنشاءات
-                            والمقاولات بجودة عالية وأسعار تنافسية. نلتزم بتقديم أفضل الحلول التي تلبي احتياجات عملائنا.
-                        </p>
-                        <div class="row g-4">
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-check text-white"></i>
-                                    </div>
-                                    <div class="me-4">
-                                        <p class="mb-0">جودة</p>
-                                        <h5 class="mb-0">الخدمات</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-user-check text-white"></i>
-                                    </div>
-                                    <div class="me-4">
-                                        <p class="mb-0">فريق</p>
-                                        <h5 class="mb-0">محترف</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-drafting-compass text-white"></i>
-                                    </div>
-                                    <div class="me-4">
-                                        <p class="mb-0">استشارات</p>
-                                        <h5 class="mb-0">مجانية</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-headphones text-white"></i>
-                                    </div>
-                                    <div class="me-4">
-                                        <p class="mb-0">دعم</p>
-                                        <h5 class="mb-0">العملاء</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="./imags/build- (4).avif"
-                            style="object-fit: cover;" alt="شركة كرم الطرق للمقاولات">
-                    </div>
+    
+<section class="contact-banner">
+    <div class="banner-overlay"></div>
+    
+    <div class="container">
+        <div class="banner-content wow fadeInUp" data-wow-delay="0.1s">
+            <div class="content-wrapper">
+                <h2>تواصل معنا الآن</h2>
+                <p>نحن جاهزون لخدمتك وتلبية جميع احتياجاتك في مجال المقاولات</p>
+                
+                <div class="contact-buttons">
+                    <a href="tel:0505777191" class="contact-btn call-btn">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>اتصل بنا</span>
+                    </a>
+                    
+                    <a href="https://wa.me/966552650007" class="contact-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>واتساب</span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Feature End -->
+</section>
+
+<!-- Feature Section Start -->
+<section class="feature-section" dir="rtl">
+    <div class="container">
+        <div class="feature-wrapper">
+            <!-- Content Side -->
+            <div class="feature-content wow fadeIn" data-wow-delay="0.1s">
+                <div class="content-wrapper">
+                    <span class="badge bg-primary mb-3">لماذا تختارنا</span>
+                    <h2 class="display-4 fw-bold mb-4">حلول متكاملة للمقاولات والإنشاءات</h2>
+                    <p class="lead mb-5">نحن في شركة كرم الطرق للمقاولات نقدم خدمات متكاملة في مجال الإنشاءات والمقاولات بجودة عالية وأسعار تنافسية. نلتزم بتقديم أفضل الحلول التي تلبي احتياجات عملائنا.</p>
+                    
+                    <div class="features-grid">
+                        <!-- Feature Item 1 -->
+                        <div class="feature-item">
+                            <div class="icon-box">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h5>جودة الخدمات</h5>
+                                <p>نلتزم بأعلى معايير الجودة</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature Item 2 -->
+                        <div class="feature-item">
+                            <div class="icon-box">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h5>فريق محترف</h5>
+                                <p>خبراء في مجال المقاولات</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature Item 3 -->
+                        <div class="feature-item">
+                            <div class="icon-box">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h5>استشارات مجانية</h5>
+                                <p>نقدم المشورة المتخصصة</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature Item 4 -->
+                        <div class="feature-item">
+                            <div class="icon-box">
+                                <i class="fas fa-headphones"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h5>دعم العملاء</h5>
+                                <p>متواجدون دائماً لخدمتكم</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Side -->
+            <div class="feature-image wow fadeIn" data-wow-delay="0.5s">
+                <img src="./imags/build- (4).avif" alt="شركة كرم الطرق للمقاولات">
+                <div class="image-overlay"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Footer Start -->
 <footer class="footer-section" dir="rtl">
@@ -403,14 +472,14 @@
                             <ul class="footer-links">
                                 <li><a href="index.html"><i class="fas fa-chevron-left"></i>الرئيسية</a></li>
                                 <li><a href="about.html"><i class="fas fa-chevron-left"></i>من نحن</a></li>
-                                <li><a href="services.html"><i class="fas fa-chevron-left"></i>خدماتنا</a></li>
+                                <li><a href="service.html"><i class="fas fa-chevron-left"></i>خدماتنا</a></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul class="footer-links">
-                                <li><a href="projects.html"><i class="fas fa-chevron-left"></i>مشاريعنا</a></li>
+                                <li><a href="project.html"><i class="fas fa-chevron-left"></i>مشاريعنا</a></li>
                                 <li><a href="contact.html"><i class="fas fa-chevron-left"></i>اتصل بنا</a></li>
-                                <li><a href="quote.html"><i class="fas fa-chevron-left"></i>طلب عرض</a></li>
+                                <li><a href="https://wa.me/966552650007"><i class="fas fa-chevron-left"></i>طلب عرض</a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,10 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #ffc107;
-    --light: #8a6a0d;
+    --primary:#c3a432;
+    --light:#c3a432;
     --dark: #1A2A36;
 }
-
+li{
+    font-family: "Noto Kufi Arabic", serif;
+    color: #000000;
+}
 .fw-medium {
     font-weight: 500 !important;
 }
@@ -295,42 +298,32 @@
 
 
 /*** Project Portfolio ***/
-#portfolio-flters li {
-    display: inline-block;
-    font-weight: 500;
-    color: var(--dark);
-    cursor: pointer;
-    transition: .5s;
-    border-bottom: 2px solid transparent;
+.project-card {
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+  
 }
 
-#portfolio-flters li:hover,
-#portfolio-flters li.active {
-    color: var(--primary);
-    border-color: var(--primary);
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-.portfolio-img {
-    position: relative;
-}
-
-
-
-
-
-.portfolio-btn {
-    position: absolute;
-    top: 0;
-    left: 0;
+.project-card img {
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    z-index: 1;
-    transition: .5s;
+    height: 250px;
 }
+.project-card h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
 
 
 
@@ -506,8 +499,9 @@ p{
     color: #000000;
     font-weight: normal;
     text-transform: capitalize;
-    text-align: right;
+    /* text-align: right; */
     font-family: "Noto Kufi Arabic", serif;
+    padding-right: 0.5rem;
 
 }
 .btn{
@@ -517,7 +511,7 @@ p{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: "Noto Kufi Arabic", serif;
-    text-align: right;
+    /* text-align: center; */
 
 }
 li{
@@ -635,16 +629,7 @@ a{
     color: rgba(255,255,255,0.7);
 }
 
-.page-header-image {
-    position: relative;
-    z-index: 1;
-}
 
-.page-header-image img {
-    max-height: 300px;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
-    animation: float 3s ease-in-out infinite;
-}
 
 .shape-divider {
     position: absolute;
@@ -875,4 +860,88 @@ a{
     .services-grid {
         grid-template-columns: 1fr;
     }
+}
+.partners-marquee {
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 40px;
+    animation: scroll 15s linear infinite;
+    width: fit-content;
+}
+
+.partner {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.partner:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #8c7104;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 20px));
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-marquee {
+        padding: 20px 0;
+    }
+    
+    .marquee-track {
+        gap: 20px;
+    }
+    
+    .partner {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* تعريف الـ animation */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* تطبيق الـ animation على العناصر المطلوبة */
+.wow {
+    animation-name: slideInRight !important;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
