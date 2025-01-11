@@ -155,7 +155,9 @@
 
 
 <!-- Page Header Start -->
-<div class="page-header position-relative bg-primary text-white py-5">
+<div class="page-header position-relative text-white py-5"style="background-image: url('./img/pexels-pixabay-7931.jpg')  ; ">
+    <div class="banner-overlay"></div>
+
     <div class="container">
         <div class="row align-items-center min-vh-40">
             <!-- Text Section -->
@@ -352,7 +354,7 @@
     
 
 <!-- Services Section -->
-<div class="container-xxl py-5" dir="rtl">
+<div class="container-xxl py-5" dir="rtl" id="services" >
     <div class="container">
         <div class="section-title text-center mb-5">
             <h6 class="text-primary">خدماتنا المتميزة</h6>
@@ -569,85 +571,96 @@
 
 <!-- Footer Start -->
 <footer class="footer-section" dir="rtl">
-    <!-- Footer Top Pattern -->
-
-
+    <div class="footer-pattern"></div>
     <div class="footer-main">
         <div class="container">
-            <div class="row g-5">
-                <!-- Company Info -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-4">
+                <!-- Left Column -->
+                <div class="col-lg-3 col-md-6">
                     <div class="footer-brand">
-                        <img src="img/logo.png" alt="كرم الطرق" class="footer-logo rounded-circle">
+                        <img src="img/logo.png" alt="كرم الطرق" class="footer-logo">
                         <div class="brand-text">
-                            <h3 class="text-primary">كرم الطرق</h3>
-                            <p class="text-light">للمقاولات العامة</p>
+                            <h3>كرم الطرق</h3>
+                            <span>للمقاولات العامة</span>
                         </div>
                     </div>
-                    <p class="footer-desc">نقدم خدمات متكاملة في مجال المقاولات والبناء بأعلى معايير الجودة والاحترافية</p>
-                    
-                    <div class="contact-grid">
-                        <div class="contact-item">
-                            <div class="icon-box">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
                                 <h6>موقعنا</h6>
-                                <p>الرياض، المملكة العربية السعودية</p>
+                                <p class="text-white">الرياض، المملكة العربية السعودية</p>
                             </div>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="icon-box">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-text">
+                        <div class="contact-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
                                 <h6>اتصل بنا</h6>
-                                <p>0505777191 - 0552650007</p>
+                                <a href="tel:0505777191">0505777191</a>
+                                <a href="tel:0552650007">0552650007</a>
                             </div>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="icon-box">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
                                 <h6>راسلنا</h6>
-                                <p>info@karamaltraq.com</p>
+                                <a href="mailto:info@karamaltraq.com">info@karamaltraq.com</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Quick Links -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <h5 class="footer-title">روابط سريعة</h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <ul class="footer-links">
-                                <li><a href="index.html"><i class="fas fa-chevron-left"></i>الرئيسية</a></li>
-                                <li><a href="about.html"><i class="fas fa-chevron-left"></i>من نحن</a></li>
-                                <li><a href="service.html"><i class="fas fa-chevron-left"></i>خدماتنا</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="footer-links">
-                                <li><a href="project.html"><i class="fas fa-chevron-left"></i>مشاريعنا</a></li>
-                                <li><a href="contact.html"><i class="fas fa-chevron-left"></i>اتصل بنا</a></li>
-                                <li><a href="https://wa.me/966552650007"><i class="fas fa-chevron-left"></i>طلب عرض</a></li>
-                            </ul>
+                <!-- Middle Column - Quick Links -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links-section">
+                        <h5>روابط سريعة</h5>
+                        <div class="links-grid">
+                            <a href="index.html"><i class="fas fa-chevron-left"></i>الرئيسية</a>
+                            <a href="about.html"><i class="fas fa-chevron-left"></i>من نحن</a>
+                            <a href="service.html"><i class="fas fa-chevron-left"></i>خدماتنا</a>
+                            <a href="project.html"><i class="fas fa-chevron-left"></i>مشاريعنا</a>
+                            <a href="contact.html"><i class="fas fa-chevron-left"></i>اتصل بنا</a>
+                            <a href="https://wa.me/966552650007"><i class="fas fa-chevron-left"></i>طلب عرض</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Newsletter -->
-               
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="واتساب"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" class="social-link" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" title="تويتر"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="انستغرام"><i class="fab fa-instagram"></i></a>
+                <!-- Right Column - Map -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="map-section h-100">
+                        <h5 class="text-center mb-3 " style="color: #f39c12;">موقعنا على الخريطة</h5>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.7976853432574!2d46.6769!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzQ5LjAiTiA0NsKwNDAnMzcuMiJF!5e0!3m2!1sen!2ssa!4v1234567890!5m2!1sen!2ssa"></iframe>
+                        </div>
                     </div>
+                </div>
+
+                <!-- Far Right Column - Certifications -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="certifications-section">
+                        <h5>موثوقون في المملكة</h5>
+                        <div class="cert-grid">
+                            <div class="cert-card">
+                                <img src="./img/Ministry-of-Commerce-01.svg" alt="وزارة التجارة">
+                                <span>3125467765432</span>
+                            </div>
+                            <div class="cert-card">
+                                <img src="./img/Zakat Tax and Customs Authority-01.svg" alt="الزكاة والضريبة">
+                                <span>3125467765432</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-section">
+                <div class="social-links">
+                    <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -656,17 +669,11 @@
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p>جميع الحقوق محفوظة &copy; 2024 <a href="#">كرم الطرق للمقاولات</a></p>
-                </div>
-                <div class="col-md-6">
- 
-                </div>
-            </div>
+            <p>جميع الحقوق محفوظة &copy; 2024 <a href="#">كرم الطرق للمقاولات</a></p>
         </div>
     </div>
 </footer>
+
 <!-- Footer End -->
 
     <!-- Back to Top -->

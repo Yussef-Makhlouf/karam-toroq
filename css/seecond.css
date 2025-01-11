@@ -1144,7 +1144,10 @@ text-align: center;
     position: relative;
     overflow: hidden;
     color: #fff;
-    background-image: url("../imags/build-\ \(2\).avif");
+    background-size: cover;
+    background-position: center;
+
+
 }
 
 .page-header-bg {
@@ -1310,5 +1313,216 @@ text-align: center;
     .contact-btn {
         min-width: 200px;
         justify-content: center;
+    }
+}
+.partners-marquee {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+
+.marquee-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    will-change: transform;
+    
+}
+
+.partner {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.partner img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.partner  :hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    border: #c3a432 solid;
+}
+.marquee-group {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+    
+
+.values-section {
+    position: relative;
+    background-image: url('../imags/build- (3).avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.values-hexagon-grid {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hex-row {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    position: relative;
+}
+
+.hex-item {
+    width: 200px;
+    height: 230px;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: linear-gradient(45deg, #f39c12, #e67e22);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.connecting-line {
+    position: absolute;
+    background: #f39c12;
+    z-index: 1;
+}
+
+.connecting-line.right {
+    width: 4rem;
+    height: 3px;
+    right: -4rem;
+    top: 50%;
+}
+
+.connecting-line.left {
+    width: 4rem;
+    height: 3px;
+    left: -4rem;
+    top: 50%;
+}
+
+.connecting-line.top-right {
+    width: 3px;
+    height: 3rem;
+    right: 50%;
+    top: -3rem;
+    transform: rotate(45deg);
+}
+
+.connecting-line.top-left {
+    width: 3px;
+    height: 3rem;
+    left: 50%;
+    top: -3rem;
+    transform: rotate(-45deg);
+}
+
+.hex-content {
+    position: absolute;
+    inset: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hex-item:hover {
+    transform: scale(1.05);
+    z-index: 3;
+}
+
+.hex-item:hover .hex-content {
+    background: rgba(255, 255, 255, 1);
+}
+
+.hex-item i {
+    font-size: 2.2rem;
+    color: #f39c12;
+    margin-bottom: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.hex-item:hover i {
+    transform: scale(1.2);
+}
+
+@media (max-width: 992px) {
+    .hex-row {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    .hex-row.offset {
+        margin-top: 0;
+    }
+
+    .hex-item {
+        width: 180px;
+        height: 207px;
+    }
+
+    .connecting-line {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .hex-item {
+        width: 150px;
+        height: 173px;
+    }
+
+    .hex-item i {
+        font-size: 1.8rem;
+    }
+
+    .hex-content h4 {
+        font-size: 1rem;
+    }
+
+    .hex-details p {
+        font-size: 0.8rem;
     }
 }
